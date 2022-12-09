@@ -58,7 +58,7 @@
     - name: Get project files from GIT
       git:
         repo: "https://github.com/smoa04/4IT572_docker.git"
-        destination: ./app
+        dest: ./app
     - name: Build docker image
       shell: cd app && docker build -t myeshop:latest .
       become: yes
